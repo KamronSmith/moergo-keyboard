@@ -68,6 +68,15 @@
             hold-trigger-key-positions = <0 1 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39 46 47 48 49 50 51 52 53 54 64 65 66 67 68 69 70 71 2 3 4>;
             hold-trigger-on-release;
         };
+
+        EXCLM: EXCLM {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EXCLM";
+            bindings = <&kp EXCL>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -120,12 +129,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                                                                                                                                   &kp F6             &kp F7             &kp F8         &kp F9            &kp F10
-&none       &kp N1           &kp N2             &kp N3            &kp N4               &kp N5                                                                                                  &kp N6      &kp N7             &kp N8             &kp N9         &kp N0            &none
-&none       &kp V            &kp M              &kp L             &kp C                &kp P                                                                                                   &kp B       &kp F              &kp O              &kp U          &kp Q             &none
-&none       &HML LEFT_ALT S  &HML LEFT_SHIFT T  &HML LEFT_META R  &HML LEFT_CONTROL D  &kp Y                                                                                                   &kp PERIOD  &HMR RCTRL N       &HMR RIGHT_META E  &HMR RSHIFT A  &HMR RALT I       &kp MINUS
-&none       &kp Z            &kp K              &kp J             &kp G                &kp W   &kp LS(LA(LC(LG(A))))  &none           &none  &out OUT_TOG  &none        &kp LS(LA(LC(LG(B))))  &kp N       &kp M              &kp COMMA          &kp DOT        &kp SINGLE_QUOTE  &kp CAPSLOCK
-&magic 3 0  &none            &none              &kp STAR          &kp COLON                    &lt 1 SPACE            &sk LEFT_SHIFT  &none  &none         &key_repeat  &lt 2 BACKSPACE                    &kp DOUBLE_QUOTES  &kp SEMI           &none          &none             &none
+&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                                                                                                                                                  &kp F6             &kp F7             &kp F8         &kp F9            &kp F10
+&none       &kp N1           &kp N2             &kp N3            &kp N4               &kp N5                                                                                                                 &kp N6      &kp N7             &kp N8             &kp N9         &kp N0            &none
+&none       &kp V            &kp M              &kp L             &kp C                &kp P                                                                                                                  &kp B       &kp F              &kp O              &kp U          &kp Q             &none
+&none       &HML LEFT_ALT S  &HML LEFT_SHIFT T  &HML LEFT_META R  &HML LEFT_CONTROL D  &kp Y                                                                                                                  &kp PERIOD  &HMR RCTRL N       &HMR RIGHT_META E  &HMR RSHIFT A  &HMR RALT I       &kp MINUS
+&none       &kp Z            &kp K              &kp J             &kp G                &kp W   &kp LS(LA(LC(LG(A))))  &none           &rgb_ug_status_macro  &out OUT_TOG  &none        &kp LS(LA(LC(LG(B))))  &kp X       &kp H              &kp COMMA          &kp DOT        &kp SINGLE_QUOTE  &kp CAPSLOCK
+&magic 3 0  &none            &none              &kp STAR          &kp COLON                    &lt 1 SPACE            &sk LEFT_SHIFT  &none                 &none         &key_repeat  &lt 2 BACKSPACE                    &kp DOUBLE_QUOTES  &kp SEMI           &none          &none             &none
             >;
         };
 
