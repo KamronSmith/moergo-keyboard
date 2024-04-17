@@ -77,6 +77,18 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        bspc: bspc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BSPC";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <175>;
+            flavor = "balanced";
+        };
     };
 
     macros {
@@ -132,9 +144,9 @@
 &kp F5      &kp F4           &kp F3             &kp F2            &kp F1                                                                                                                                                  &kp F6             &kp F7             &kp F8         &kp F9            &kp F10
 &none       &kp N1           &kp N2             &kp N3            &kp N4               &kp N5                                                                                                                 &kp N6      &kp N7             &kp N8             &kp N9         &kp N0            &kp LC(LA(DELETE))
 &none       &kp V            &kp M              &kp L             &kp C                &kp P                                                                                                                  &kp B       &kp F              &kp O              &kp U          &kp Q             &none
-&none       &HML LEFT_ALT S  &HML LEFT_SHIFT T  &HML LEFT_META R  &HML LEFT_CONTROL D  &kp Y                                                                                                                  &kp PERIOD  &HMR RCTRL N       &HMR RIGHT_META E  &HMR RSHIFT A  &HMR RALT I       &kp MINUS
-&none       &kp Z            &kp K              &kp J             &kp G                &kp W   &kp LS(LA(LC(LG(A))))  &none           &rgb_ug_status_macro  &out OUT_TOG  &none        &kp LS(LA(LC(LG(B))))  &kp X       &kp H              &kp COMMA          &kp DOT        &kp SINGLE_QUOTE  &kp CAPSLOCK
-&magic 3 0  &none            &none              &kp STAR          &kp COLON                    &lt 1 SPACE            &sk LEFT_SHIFT  &none                 &none         &key_repeat  &lt 2 BACKSPACE                    &kp DOUBLE_QUOTES  &kp SEMI           &none          &none             &none
+&none       &HML LEFT_ALT S  &HML LEFT_SHIFT T  &HML LEFT_META R  &HML LEFT_CONTROL D  &kp Y                                                                                                                  &kp PERIOD  &HMR RCTRL N       &HMR RIGHT_META E  &HMR RSHIFT A  &HMR RALT I       &caps_word
+&none       &kp Z            &kp K              &kp J             &bspc 2 G            &kp W   &kp LS(LA(LC(LG(A))))  &none           &rgb_ug_status_macro  &out OUT_TOG  &none        &kp LS(LA(LC(LG(B))))  &kp X       &bspc 2 H          &kp COMMA          &kp DOT        &kp SINGLE_QUOTE  &none
+&magic 3 0  &none            &none              &kp STAR          &kp COLON                    &lt 1 SPACE            &sk LEFT_SHIFT  &none                 &none         &key_repeat  &bspc 2 BACKSPACE                  &kp DOUBLE_QUOTES  &kp SEMI           &none          &none             &none
             >;
         };
 
