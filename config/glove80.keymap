@@ -146,7 +146,7 @@
 &none       &kp V            &kp M              &kp L             &kp C                &kp P                                                                                                                  &kp B       &kp F              &kp O              &kp U          &kp Q             &none
 &none       &HML LEFT_ALT S  &HML LEFT_SHIFT T  &HML LEFT_META R  &HML LEFT_CONTROL D  &kp Y                                                                                                                  &kp PERIOD  &HMR RCTRL N       &HMR RIGHT_META E  &HMR RSHIFT A  &HMR RALT I       &caps_word
 &none       &kp Z            &kp K              &kp J             &bspc 2 G            &kp W   &kp LS(LA(LC(LG(A))))  &none           &rgb_ug_status_macro  &out OUT_TOG  &none        &kp LS(LA(LC(LG(B))))  &kp X       &bspc 2 H          &kp COMMA          &kp DOT        &kp SINGLE_QUOTE  &none
-&magic 3 0  &none            &none              &kp STAR          &kp COLON                    &lt 1 SPACE            &sk LEFT_SHIFT  &none                 &none         &key_repeat  &bspc 2 BACKSPACE                  &kp DOUBLE_QUOTES  &kp SEMI           &none          &none             &none
+&magic 3 0  &none            &none              &kp STAR          &kp COLON                    &lt 1 SPACE            &sk LEFT_SHIFT  &none                 &none         &key_repeat  &kp BACKSPACE                      &kp DOUBLE_QUOTES  &kp SEMI           &none          &none             &none
             >;
         };
 
@@ -163,12 +163,12 @@
 
         Symbol {
             bindings = <
-&none  &none        &none       &none                  &none                                                                          &none   &none   &none   &none  &none
-&none  &none        &none       &none                  &none                 &none                                            &none   &none   &none   &none   &none  &none
-&none  &kp AT_SIGN  &kp DOLLAR  &kp RIGHT_BRACE        &kp LEFT_BRACE        &none                                            &none   &kp N7  &kp N8  &kp N9  &none  &none
-&none  &kp TILDE    &kp SLASH   &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &none                                            &kp N0  &kp N4  &kp N5  &kp N6  &none  &none
-&none  &kp GRAVE    &kp PLUS    &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &none  &none  &none  &none  &none  &none  &none  &none   &kp N1  &kp N2  &kp N3  &none  &none
-&none  &none        &none       &none                  &none                        &none  &none  &none  &none  &none  &none          &none   &none   &none   &none  &none
+&none  &none           &none         &none       &none                                                                      &none   &none   &none   &none  &none
+&none  &none           &none         &none       &none             &none                                            &none   &none   &none   &none   &none  &none
+&none  &kp AT_SIGN     &kp DOLLAR    &kp CARET   &kp EQUAL         &none                                            &none   &kp N7  &kp N8  &kp N9  &none  &none
+&none  &kp UNDERSCORE  &kp COLON     &kp SLASH   &kp MINUS         &none                                            &kp N0  &kp N4  &kp N5  &kp N6  &none  &none
+&none  &kp HASH        &kp ASTERISK  &kp DOLLAR  &kp LEFT_BRACKET  &none  &none  &none  &none  &none  &none  &none  &none   &kp N1  &kp N2  &kp N3  &none  &none
+&none  &none           &none         &none       &none                    &none  &none  &none  &none  &none  &none          &none   &none   &none   &none  &none
             >;
         };
 
