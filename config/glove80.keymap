@@ -128,6 +128,17 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <42 41>;
+            require-prior-idle-ms = <175>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
