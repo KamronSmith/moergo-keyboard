@@ -140,13 +140,6 @@
             bindings = <&none &kp N1 &kp Q &kp A &kp Z &kp N2 &kp W &kp S &kp X &kp EXCL &kp LS(Q) &kp LS(A) &kp LS(Z) &kp AT &kp LS(W) &kp LS(S) &kp LS(X)>;
             label = "ONEDOWNTWODOWN";
         };
-
-        umm: umm {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp N1 &kp Q &kp A &kp Z &kp N2 &kp W &kp R &kp X &kp EXCL &kp LS(Q) &kp LS(A) &kp LS(Z) &kp AT &kp LS(W) &kp LS(R) &kp LS(X)>;
-            label = "UMM";
-        };
     };
 
     combos {
